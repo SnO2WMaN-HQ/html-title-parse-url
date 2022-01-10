@@ -3,19 +3,19 @@ scripts:
     desc: Run dev server
     allow:
       - net
-    cmd: deno run --allow-env=PORT --importmap=./import_map.json --watch ./src/main.ts
+    cmd: deno run --allow-env=PORT --watch ./src/main.ts
 
   lint:
     desc: Run lint
-    cmd: deno lint
+    cmd: deno lint -c ./deno.jsonc
 
   fmt:
     desc: Run format
-    cmd: deno fmt
+    cmd: deno fmt -c ./deno.jsonc
 
   test:
     desc: Run test
-    cmd: deno test --importmap=./import_map.json --reload --coverage=./coverage
+    cmd: deno test --reload --coverage=./coverage
 
   cov:
     cmd: deno coverage ./coverage

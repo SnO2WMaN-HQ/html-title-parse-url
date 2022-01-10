@@ -1,6 +1,9 @@
 {
   "$schema": "https://deno.land/x/deno/cli/schemas/config-file.v1.json",
   "fmt": {
+    "files": {
+      "exclude": ["coverage"]
+    },
     "options": {
       "lineWidth": 120,
       "indentWidth": 2,
