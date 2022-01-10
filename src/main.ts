@@ -1,6 +1,4 @@
-import { bold, yellow } from "std/fmt/colors";
-import { oakCors } from "cors";
-import { Application, Router } from "oak";
+import { Application, bold, oakCors, Router, yellow } from "./deps.ts";
 
 const app = new Application();
 const router = new Router();

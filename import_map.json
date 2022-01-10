@@ -1,9 +1,0 @@
-{
-  "imports": {
-    "cors": "https://deno.land/x/cors@v1.2.2/mod.ts",
-    "oak": "https://deno.land/x/oak@v10.1.0/mod.ts",
-    "std/fmt/colors": "https://deno.land/std@0.118.0/fmt/colors.ts",
-    "std/path": "https://deno.land/std@0.120.0/path/mod.ts",
-    "std/testing/asserts": "https://deno.land/std@0.120.0/testing/asserts.ts"
-  }
-}
