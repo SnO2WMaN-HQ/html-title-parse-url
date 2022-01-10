@@ -1,0 +1,6 @@
+# Test
+coverage/
+
+# VSCode
+.vscode/*
+!.vscode/extensions.json

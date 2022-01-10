@@ -1,0 +1,22 @@
+scripts:
+  dev:
+    desc: Run dev server
+    allow:
+      - net
+    cmd: deno run --allow-env=PORT --importmap=./import_map.json --watch ./src/main.ts
+
+  lint:
+    desc: Run lint
+    cmd: deno lint
+
+  fmt:
+    desc: Run format
+    cmd: deno fmt
+
+  test:
+    desc: Run test
+    cmd: deno test --importmap=./import_map.json --reload --coverage=./coverage
+
+  cov:
+    cmd: deno coverage ./coverage
+    desc: Show uncovered lists
